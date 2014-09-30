@@ -44,7 +44,6 @@
     <Compile Include="Artist.cs" />
     <Compile Include="DatePrecision.cs" />
     <Compile Include="ExternalIds.cs" />
-    <Compile Include="ExternalIds_2.cs" />
     <Compile Include="ExternalUrls.cs" />
     <Compile Include="IAlbum.cs" />
     <Compile Include="Image.cs" />
