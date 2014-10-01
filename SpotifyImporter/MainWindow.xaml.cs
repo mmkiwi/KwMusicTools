@@ -24,5 +24,10 @@ namespace SpotifyImporter
         {
             InitializeComponent();
         }
+
+        private void Do_Things_Click(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("Oi m8");
+        }
     }
 }
