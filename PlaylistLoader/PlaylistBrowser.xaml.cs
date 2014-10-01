@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using PlaylistLoader.Resources;
+using mshtml;
 
 namespace PlaylistLoader
 {
@@ -31,7 +32,17 @@ namespace PlaylistLoader
         void ExportButton_Click(object sender, RoutedEventArgs e)
         {
             var scriptSource = ProjectResources.Extractor;
-            var uri = Convert.ToBase64String(scriptSource);
+            var base64 = Convert.ToBase64String(scriptSource);
+
+            var doc = WebBrowser.Document as IHTMLDocument3;
+            var head = (doc.getElementsByTagName("head") as IHTMLElementCollection).item(index: 0);
+
+            
+            var scriptTag = (doc as IHTMLDocument2).createElement("script");
+
+            scriptTag.setAttribute("src", "data:text/javascript;base64," + base64);
+            head.appendChild(scriptTag as IHTMLDOMNode);
+
         }
     }
 }

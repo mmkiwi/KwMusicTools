@@ -2,7 +2,7 @@
 using System;
 namespace SpotifyWebApi
 {
-    interface ISpotifyObject
+    public interface ISpotifyObject
     {
         [JsonProperty]
         string Type {get;}
