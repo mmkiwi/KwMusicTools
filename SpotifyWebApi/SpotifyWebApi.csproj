@@ -30,8 +30,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.5\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,19 +45,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Album.cs" />
-    <Compile Include="Artist.cs" />
-    <Compile Include="DatePrecision.cs" />
-    <Compile Include="ExternalIds.cs" />
-    <Compile Include="ExternalUrls.cs" />
-    <Compile Include="IAlbum.cs" />
-    <Compile Include="Image.cs" />
-    <Compile Include="ISpotifyObject.cs" />
-    <Compile Include="PagingCollection.cs" />
+    <Compile Include="DataContract\Album.cs" />
+    <Compile Include="DataContract\Artist.cs" />
+    <Compile Include="DataContract\DatePrecision.cs" />
+    <Compile Include="DataContract\ExternalIds.cs" />
+    <Compile Include="DataContract\ExternalUrls.cs" />
+    <Compile Include="DataContract\Enums.cs" />
+    <Compile Include="DataContract\Image.cs" />
+    <Compile Include="DataContract\ISpotifyObject.cs" />
+    <Compile Include="DataContract\PagingCollection.cs" />
+    <Compile Include="Methods\Album.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SimplifiedAlbum.cs" />
-    <Compile Include="Track.cs" />
-    <Compile Include="Utilities.cs" />
+    <Compile Include="DataContract\SimplifiedAlbum.cs" />
+    <Compile Include="DataContract\Track.cs" />
+    <Compile Include="Methods\Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
