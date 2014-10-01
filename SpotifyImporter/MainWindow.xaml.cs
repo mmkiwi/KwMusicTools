@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using SpotifyWebAPI;
+
 
 namespace SpotifyImporter
 {
@@ -29,7 +29,7 @@ namespace SpotifyImporter
         private void Do_Things_Click(object sender, RoutedEventArgs e)
         {
             Console.WriteLine("Oi m8");
-            SpotifyWebAPI.
+            
         }
     }
 }
