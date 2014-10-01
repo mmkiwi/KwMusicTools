@@ -54,9 +54,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SpotifyWebApi\SpotifyWebApi.csproj">
+    <ProjectReference Include="..\SpotifyWebApi\SpotifyWebApi_old.csproj">
       <Project>{6191c1d8-8807-4576-b299-10203a5fb994}</Project>
-      <Name>SpotifyWebApi</Name>
+      <Name>SpotifyWebApi_old</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

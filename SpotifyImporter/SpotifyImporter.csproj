@@ -92,6 +92,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\External\SpotifyWebAPI\SpotifyWebAPI.csproj">
+      <Project>{ee840fe5-20f6-46b5-9133-30ce4f1d10e3}</Project>
+      <Name>SpotifyWebAPI</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
