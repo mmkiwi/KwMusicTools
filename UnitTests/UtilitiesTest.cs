@@ -15,8 +15,6 @@ namespace UnitTests
                 {"artist", "Pitbull"},
                 {"track", "Global Warming"}
             }), "artist:Pitbull%20track:Global+Warming");
-
-            // LOL HI
         }
 
     }
