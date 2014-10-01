@@ -15,6 +15,9 @@ namespace SpotifyWebApi
             var query = HttpUtility.ParseQueryString(string.Empty);
             query.Add("q", Utilities.GetQuery(new Dictionary<string, string> { { "album", albumName } }));
 
+            // Do search
+        
+
             throw new NotImplementedException();
         }
     }
