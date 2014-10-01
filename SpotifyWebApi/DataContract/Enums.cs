@@ -4,7 +4,8 @@ namespace SpotifyWebApi
 {
     public enum AlbumType
     {
-        [Description("album")] Album,
+        [Description("album")] 
+        Album,
         Single,
         Compilation
     }
